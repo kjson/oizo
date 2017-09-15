@@ -1,0 +1,6 @@
+[package]
+name = "oizo"
+version = "0.1.0"
+authors = ["Kevin Johnson <kevinstuartjohnson@gmail.com>"]
+
+[dependencies]

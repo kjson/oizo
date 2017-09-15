@@ -16,11 +16,9 @@ fn main() {
 
     for stream in listener.incoming() {
         match stream {
-            Err(e) => {
-                println!("Failed: {}", e)
-            },
+            Err(e) => println!("Failed: {}", e),
             Ok(stream) => {
-                thread::spawn(move || { handle_client(stream) });
+                thread::spawn(move || handle_client(stream));
             }
         }
     }
